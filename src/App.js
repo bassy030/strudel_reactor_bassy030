@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { StrudelMirror } from '@strudel/codemirror';
 import { evalScope } from '@strudel/core';
 import { drawPianoroll } from '@strudel/draw';
@@ -10,13 +10,14 @@ import { registerSoundfonts } from '@strudel/soundfonts';
 import { stranger_tune } from './tunes';
 import console_monkey_patch, { getD3Data } from './console-monkey-patch';
 import PreprocessorTextarea from './components/PreprocessorTextarea';
-
+import PlayStopButtons from './components/PlayStopButtons';
 let globalEditor = null;
 
 const handleD3Data = (event) => {
     console.log(event.detail);
 };
 
+/** 
 export function SetupButtons() {
 
     document.getElementById('play').addEventListener('click', () => globalEditor.evaluate());
@@ -60,11 +61,21 @@ export function ProcessText(match, ...args) {
     }
 
     return replace
-}
+}*/
 
 export default function StrudelDemo() {
 
-const hasRun = useRef(false);
+    const hasRun = useRef(false);
+
+    const [musicText, setMusicText] = useState(stranger_tune)
+
+    const handlePlay = () => {
+        globalEditor.evaluate()
+    }
+
+    const handleStop = () => {
+        globalEditor.stop()
+    }
 
 useEffect(() => {
 
@@ -98,13 +109,9 @@ useEffect(() => {
                     await Promise.all([loadModules, registerSynthSounds(), registerSoundfonts()]);
                 },
             });
-            
-        document.getElementById('proc').value = stranger_tune
-        SetupButtons()
-        Proc()
     }
-
-}, []);
+    globalEditor.setCode(musicText);
+}, [musicText]);
 
 
 return (
@@ -123,7 +130,7 @@ return (
             </div>
             <div className="row">
             <div className="col-lg-8">
-                <PreprocessorTextarea />
+                <PreprocessorTextarea defaultValue={musicText} onChange={(e) => setMusicText(e.target.value)} />
                     <div className="card shadow">
                         <div className="card-header bg-success">
                             <h5>Music Output</h5>
@@ -134,37 +141,13 @@ return (
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4">
-                    <div className="card shadow">
-                        <div className="card-header bg-primary">
-                            <h5>Playback Controls</h5>
-                        </div>
-                        <div className="card-body">
-                            <button id="process" className="btn btn-outline-primary">Preprocess</button>
-                            <button id="process_play" className="btn btn-outline-primary">Proc & Play</button>
-                            <button id="play" className="btn btn-outline-primary">Play</button>
-                            <button id="stop" className="btn btn-outline-primary">Stop</button>
-                        </div>
-                    </div>
+            <div className="col-lg-4">
+                <PlayStopButtons onPlay={handlePlay} onStop={handleStop}/>
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">
                             <h5>DJ Controls</h5>
                         </div>
-                        <div className="card-body">
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onChange={ProcAndPlay} defaultChecked />
-                                <label className="form-check-label" htmlFor="flexRadioDefault1">
-                                    p1: ON
-                                </label>
-                            </div>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" onChange={ProcAndPlay} />
-                                <label className="form-check-label" htmlFor="flexRadioDefault2">
-                                    p1: HUSH
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+                                        </div>
                 </div>
         </div>
         <canvas id="roll"></canvas>
