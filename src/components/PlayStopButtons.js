@@ -2,6 +2,7 @@ function PlayStopButtons({ onPlay, onStop, onProcess, onProcAndPlay }) {
     return (
         <div className="card shadow">
             <div className="card-header bg-primary">
+  
                 <h5>Playback Controls</h5>
             </div>
             <div className="card-body">

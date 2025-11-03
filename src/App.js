@@ -11,7 +11,9 @@ import { stranger_tune } from './tunes';
 import console_monkey_patch, { getD3Data } from './console-monkey-patch';
 import PreprocessorTextarea from './components/PreprocessorTextarea';
 import PlayStopButtons from './components/PlayStopButtons';
-let globalEditor = null;
+import InstrumentToggleSettings from './components/InstrumentToggleSettings'
+
+let  globalEditor = null;
 
 const handleD3Data = (event) => {
     console.log(event.detail);
@@ -68,9 +70,16 @@ export default function StrudelDemo() {
     const hasRun = useRef(false);
 
     const [musicText, setMusicText] = useState(stranger_tune)
+    const [musicPattern, setMusicPattern] = useState(true)
 
     function preprocessMusicText(textMusic) {
-        const replaceHushOrOn = "";
+        let replaceHushOrOn;
+        if (musicPattern) {
+            replaceHushOrOn = "";
+        }
+        else {
+            replaceHushOrOn = "_";
+        }
         return textMusic.replaceAll("<p1_Radio>", replaceHushOrOn);
     }
 
@@ -164,8 +173,9 @@ return (
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">
                             <h5>DJ Controls</h5>
-                        </div>
-                                        </div>
+                    </div>
+                    <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}/>
+                </div>
                 </div>
         </div>
         <canvas id="roll"></canvas>
