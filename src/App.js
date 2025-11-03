@@ -9,6 +9,7 @@ import { getAudioContext, webaudioOutput, registerSynthSounds } from '@strudel/w
 import { registerSoundfonts } from '@strudel/soundfonts';
 import { stranger_tune } from './tunes';
 import console_monkey_patch, { getD3Data } from './console-monkey-patch';
+import PreprocessorTextarea from './components/PreprocessorTextarea';
 
 let globalEditor = null;
 
@@ -121,15 +122,8 @@ return (
                 </div>
             </div>
             <div className="row">
-                <div className="col-lg-8">
-                    <div className="card">
-                        <div className="card-header">
-                            <h5>Preprocessing Editor</h5>
-                        </div>
-                        <div className="card-body">
-                            <textarea className="form-control" id="proc" rows="14"></textarea>
-                        </div>
-                    </div>
+            <div className="col-lg-8">
+                <PreprocessorTextarea />
                     <div className="card shadow">
                         <div className="card-header bg-success">
                             <h5>Music Output</h5>
