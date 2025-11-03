@@ -69,12 +69,30 @@ export default function StrudelDemo() {
 
     const [musicText, setMusicText] = useState(stranger_tune)
 
+    function preprocessMusicText(textMusic) {
+        const replaceHushOrOn = "";
+        return textMusic.replaceAll("<p1_Radio>", replaceHushOrOn);
+    }
+
     const handlePlay = () => {
         globalEditor.evaluate()
     }
 
     const handleStop = () => {
         globalEditor.stop()
+    }
+
+    const handleProcess = () => {
+        if (!globalEditor) return;
+        const processedMusicCode = preprocessMusicText(musicText);
+        globalEditor.setCode(processedMusicCode);
+    }
+
+    const handleProcAndPlay = () => {
+        if (!globalEditor) return;
+        const processedMusicCode = preprocessMusicText(musicText);
+        globalEditor.setCode(processedMusicCode);
+        globalEditor.evaluate();
     }
 
 useEffect(() => {
@@ -142,7 +160,7 @@ return (
                     </div>
                 </div>
             <div className="col-lg-4">
-                <PlayStopButtons onPlay={handlePlay} onStop={handleStop}/>
+                <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} />
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">
                             <h5>DJ Controls</h5>
