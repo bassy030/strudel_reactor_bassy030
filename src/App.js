@@ -141,8 +141,8 @@ useEffect(() => {
 }, [musicText]);
 
 
-return (
-        <div className="container-fluid">
+    return (
+        <div className="container-fluid" style={{ minHeight: '100vh', backgroundColor: '#1a1a2e', color: '#eee' }}>
             <div className="row mb-4">
                 <div className="col-12">
                     <div className="text-center">
