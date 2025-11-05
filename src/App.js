@@ -72,6 +72,9 @@ export default function StrudelDemo() {
     const [musicText, setMusicText] = useState(stranger_tune)
     const [musicPattern, setMusicPattern] = useState(true)
 
+    // For music slider
+    const [sliderVolume, setSliderVolume] = useState(50);
+
     function preprocessMusicText(textMusic) {
         let replaceHushOrOn;
         if (musicPattern) {
@@ -174,7 +177,8 @@ useEffect(() => {
                         <div className="card-header bg-dark text-white">
                             <h5>DJ Controls</h5>
                     </div>
-                    <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}/>
+                        <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
+                            sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
                 </div>
                 </div>
         </div>
