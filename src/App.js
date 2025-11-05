@@ -13,7 +13,8 @@ import PreprocessorTextarea from './components/PreprocessorTextarea';
 import PlayStopButtons from './components/PlayStopButtons';
 import InstrumentToggleSettings from './components/InstrumentToggleSettings';
 import TempoControls from './components/TempoControls';
-import { type } from '@testing-library/user-event/dist/type';
+import D3Graph from './components/D3Graph';
+import { type } from '@testing-library/user-event/dist/type'
 
 let  globalEditor = null;
 
@@ -94,7 +95,7 @@ useEffect(() => {
         console_monkey_patch();
         hasRun.current = true;
         //Code copied from example: https://codeberg.org/uzu/strudel/src/branch/main/examples/codemirror-repl
-            //init canvas
+        //init canvas
             const canvas = document.getElementById('roll');
             canvas.width = canvas.width * 2;
             canvas.height = canvas.height * 2;
@@ -161,6 +162,7 @@ useEffect(() => {
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
                             sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
                     </div>
+                    <D3Graph />
                 </div>
         </div>
         <canvas id="roll"></canvas>
