@@ -36,6 +36,7 @@ export default function StrudelDemo() {
     const [sliderVolume, setSliderVolume] = useState(50);
 
     // Dowload JSON file function
+    // I have taken reference for this part from the following site: https://medium.com/@gb.usmanumar/how-to-export-data-to-csv-json-in-react-js-ea45d940652a
     const downloadJSONFile = () => {
         const dataToDowload = {
             volume: sliderVolume,
