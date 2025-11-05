@@ -13,6 +13,7 @@ import PreprocessorTextarea from './components/PreprocessorTextarea';
 import PlayStopButtons from './components/PlayStopButtons';
 import InstrumentToggleSettings from './components/InstrumentToggleSettings';
 import TempoControls from './components/TempoControls';
+import { type } from '@testing-library/user-event/dist/type';
 
 let  globalEditor = null;
 
@@ -34,6 +35,23 @@ export default function StrudelDemo() {
     // For music slider
     const [sliderVolume, setSliderVolume] = useState(50);
 
+    // Dowload JSON file function
+    const downloadJSONFile = () => {
+        const dataToDowload = {
+            volume: sliderVolume,
+            p1Radio: musicPattern,
+            Bpm: bpm,
+            Conversion: conversion,
+            BeatCycle: beatCycle
+        };
+
+        const jsonData = new Blob([JSON.stringify(dataToDowload)], { type: 'application/json' });
+        const jsonUrl = URL.createObjectURL(jsonData);
+        const jsonLink = document.createElement('a');
+        jsonLink.href = jsonUrl;
+        jsonLink.download = 'strudel-data.json';
+        jsonLink.click();
+    }
     function preprocessMusicText(textMusic) {
         let replaceHushOrOn;
         let replaceVolume = sliderVolume / 100;
@@ -132,8 +150,8 @@ useEffect(() => {
                         </div>
                     </div>
                 </div>
-            <div className="col-lg-4">
-                    <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} />
+                <div className="col-lg-4">
+                    <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} onJsonDowload={downloadJSONFile} />
                     <TempoControls bpm={bpm} setBpm={setBpm} conversion={conversion} setConversion={setConversion} beatCycle={beatCycle} setBeatCycle={setBeatCycle} />
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">

@@ -1,4 +1,4 @@
-function PlayStopButtons({ onPlay, onStop, onProcess, onProcAndPlay }) {
+function PlayStopButtons({ onPlay, onStop, onProcess, onProcAndPlay, onJsonDowload }) {
     return (
         <div className="card shadow">
             <div className="card-header bg-primary">
@@ -9,6 +9,7 @@ function PlayStopButtons({ onPlay, onStop, onProcess, onProcAndPlay }) {
                 <button id="stop" onClick={onStop} className="btn btn-outline-danger"> <i className="bi bi-stop-fill"></i> Stop</button>
                 <button id="process" onClick={onProcess} className="btn btn-outline-info"> <i className="bi-arrow-repeat"></i> Process</button>
                 <button id="procandplay" onClick={onProcAndPlay} className="btn btn-outline-warning"> <i className="bi-skip-forward-fill"></i> Proc & Play</button>
+                <button onClick={onJsonDowload} className="btn btn-success">Save Json</button>
             </div>
         </div>
     )
