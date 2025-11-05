@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useRef, useState } from "react";
-import { StrudelMirror } from '@strudel/codemirror';
+import { StrudelMirror, slider } from '@strudel/codemirror';
 import { evalScope } from '@strudel/core';
 import { drawPianoroll } from '@strudel/draw';
 import { initAudioOnFirstClick } from '@strudel/webaudio';
@@ -77,13 +77,14 @@ export default function StrudelDemo() {
 
     function preprocessMusicText(textMusic) {
         let replaceHushOrOn;
+        let replaceVolume = sliderVolume / 100;
         if (musicPattern) {
             replaceHushOrOn = "";
         }
         else {
             replaceHushOrOn = "_";
         }
-        return textMusic.replaceAll("<p1_Radio>", replaceHushOrOn);
+        return textMusic.replaceAll("<p1_Radio>", replaceHushOrOn).replaceAll("<Volume>", replaceVolume);
     }
 
     const handlePlay = () => {
