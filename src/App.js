@@ -11,7 +11,8 @@ import { stranger_tune } from './tunes';
 import console_monkey_patch, { getD3Data } from './console-monkey-patch';
 import PreprocessorTextarea from './components/PreprocessorTextarea';
 import PlayStopButtons from './components/PlayStopButtons';
-import InstrumentToggleSettings from './components/InstrumentToggleSettings'
+import InstrumentToggleSettings from './components/InstrumentToggleSettings';
+import TempoControls from './components/TempoControls';
 
 let  globalEditor = null;
 
@@ -71,6 +72,11 @@ export default function StrudelDemo() {
 
     const [musicText, setMusicText] = useState(stranger_tune)
     const [musicPattern, setMusicPattern] = useState(true)
+
+    // Controls for Tempo
+    const [bpm, setBpm] = useState(140);
+    const [conversion, setConversion] = useState(60);
+    const [beatCycle, setBeatCycle] = useState(4);
 
     // For music slider
     const [sliderVolume, setSliderVolume] = useState(50);
@@ -174,13 +180,14 @@ useEffect(() => {
                 </div>
             <div className="col-lg-4">
                 <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} />
+                    <TempoControls />
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">
                             <h5>DJ Controls</h5>
-                    </div>
+                        </div>
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
                             sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
-                </div>
+                    </div>
                 </div>
         </div>
         <canvas id="roll"></canvas>
