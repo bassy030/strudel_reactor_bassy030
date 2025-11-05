@@ -15,13 +15,13 @@ function TempControls({ bpm, setBpm, conversion, setConversion, beatCycle, setBe
                     <label htmlFor="inputConversion" className="form-label">
                         Conversion Factor
                     </label>
-                    <input type="number" className="form-control" id="inputConversion" valeu={conversion} onChange={(e) => setConversion(parseInt(e.target.value))} />
+                    <input type="number" className="form-control" id="inputConversion" value={conversion} onChange={(e) => setConversion(parseInt(e.target.value))} />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="inputBeats" className="form-label">
                         Time Signature (Beats per Cycle)
                     </label>
-                    <input type="number" className="form-control" id="inputBeats" valeu={beatCycle} onChange={(e) => setBeatCycle(parseInt(e.target.value))} />
+                    <input type="number" className="form-control" id="inputBeats" value={beatCycle} onChange={(e) => setBeatCycle(parseInt(e.target.value))} />
                 </div>
             </div>
             </div>

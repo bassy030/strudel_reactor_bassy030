@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useRef, useState } from "react";
 import { StrudelMirror, slider } from '@strudel/codemirror';
-import { evalScope } from '@strudel/core';
+import { evalScope, set } from '@strudel/core';
 import { drawPianoroll } from '@strudel/draw';
 import { initAudioOnFirstClick } from '@strudel/webaudio';
 import { transpiler } from '@strudel/transpiler';
@@ -19,53 +19,6 @@ let  globalEditor = null;
 const handleD3Data = (event) => {
     console.log(event.detail);
 };
-
-/** 
-export function SetupButtons() {
-
-    document.getElementById('play').addEventListener('click', () => globalEditor.evaluate());
-    document.getElementById('stop').addEventListener('click', () => globalEditor.stop());
-    document.getElementById('process').addEventListener('click', () => {
-        Proc()
-    }
-    )
-    document.getElementById('process_play').addEventListener('click', () => {
-        if (globalEditor != null) {
-            Proc()
-            globalEditor.evaluate()
-        }
-    }
-    )
-}
-
-
-
-export function ProcAndPlay() {
-    if (globalEditor != null && globalEditor.repl.state.started == true) {
-        console.log(globalEditor)
-        Proc()
-        globalEditor.evaluate();
-    }
-}
-
-export function Proc() {
-
-    let proc_text = document.getElementById('proc').value
-    let proc_text_replaced = proc_text.replaceAll('<p1_Radio>', ProcessText);
-    ProcessText(proc_text);
-    globalEditor.setCode(proc_text_replaced)
-}
-
-export function ProcessText(match, ...args) {
-
-    let replace = ""
-    if (document.getElementById('flexRadioDefault2').checked) {
-        replace = "_"
-    }
-
-    return replace
-}*/
-
 export default function StrudelDemo() {
 
     const hasRun = useRef(false);
@@ -90,7 +43,8 @@ export default function StrudelDemo() {
         else {
             replaceHushOrOn = "_";
         }
-        return textMusic.replaceAll("<p1_Radio>", replaceHushOrOn).replaceAll("<Volume>", replaceVolume);
+        return textMusic.replaceAll("<p1_Radio>", replaceHushOrOn).replaceAll("<Volume>", replaceVolume).
+            replaceAll("<BPM>", bpm).replaceAll("<CONVERSION>", conversion).replaceAll("<BEATS>", beatCycle);
     }
 
     const handlePlay = () => {
@@ -179,8 +133,8 @@ useEffect(() => {
                     </div>
                 </div>
             <div className="col-lg-4">
-                <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} />
-                    <TempoControls />
+                    <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} />
+                    <TempoControls bpm={bpm} setBpm={setBpm} conversion={conversion} setConversion={setConversion} beatCycle={beatCycle} setBeatCycle={setBeatCycle} />
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">
                             <h5>DJ Controls</h5>
@@ -196,3 +150,50 @@ useEffect(() => {
 
 
 }
+
+
+/**
+export function SetupButtons() {
+
+document.getElementById('play').addEventListener('click', () => globalEditor.evaluate());
+document.getElementById('stop').addEventListener('click', () => globalEditor.stop());
+document.getElementById('process').addEventListener('click', () => {
+Proc()
+}
+)
+document.getElementById('process_play').addEventListener('click', () => {
+if (globalEditor != null) {
+Proc()
+globalEditor.evaluate()
+}
+}
+)
+}
+
+
+
+export function ProcAndPlay() {
+if (globalEditor != null && globalEditor.repl.state.started == true) {
+console.log(globalEditor)
+Proc()
+globalEditor.evaluate();
+}
+}
+
+export function Proc() {
+
+let proc_text = document.getElementById('proc').value
+let proc_text_replaced = proc_text.replaceAll('<p1_Radio>', ProcessText);
+ProcessText(proc_text);
+globalEditor.setCode(proc_text_replaced)
+}
+
+export function ProcessText(match, ...args) {
+
+let replace = ""
+if (document.getElementById('flexRadioDefault2').checked) {
+replace = "_"
+}
+
+return replace
+}*/
