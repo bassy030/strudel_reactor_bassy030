@@ -26,7 +26,9 @@ export default function JSONhandling({
                 <i className="bi bi-file-earmark-arrow-down"></i> JSON Handling
             </div>
             <div className="card-body d-grid gap-2">
-                <button onClick={downloadJSONFile} className="btn btn-success">Save Json</button>
+                <button onClick={downloadJSONFile} className="btn btn-outline-success">Save JSON</button>
+                <label htmlFor="uploadJSONFile" className="btn btn-outline-info">Upload JSON</label>
+                <input type="file" id="uploadJSONFile" accept=".json" style={{ display: "none" }}/>
             </div>
         </div>
     );

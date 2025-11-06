@@ -38,9 +38,6 @@ export default function D3Graph() {
                 <h5>Live Music Visualization</h5>
             </div>
             <div className="card-body">
-                <h1>
-                    Output : {rngNumber}
-                </h1>
                 <svg width="100%" height="400px" className="border border-primary"></svg>
             </div>
         </div>
