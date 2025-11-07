@@ -149,7 +149,6 @@ useEffect(() => {
                 </div>
                 <div className="col-lg-4">
                     <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} />
-                    <JSONhandling sliderVolume={sliderVolume} musicPattern={musicPattern} bpm={bpm} conversion={conversion} beatCycle={beatCycle} />
                     <TempoControls bpm={bpm} setBpm={setBpm} conversion={conversion} setConversion={setConversion} beatCycle={beatCycle} setBeatCycle={setBeatCycle} />
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">
@@ -158,6 +157,7 @@ useEffect(() => {
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
                             sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
                     </div>
+                    <JSONhandling sliderVolume={sliderVolume} musicPattern={musicPattern} bpm={bpm} conversion={conversion} beatCycle={beatCycle} />
                     <D3Graph />
                 </div>
         </div>

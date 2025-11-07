@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 // Dowload JSON file function
 // I have taken reference for this part from the following site: https://medium.com/@gb.usmanumar/how-to-export-data-to-csv-json-in-react-js-ea45d940652a
 export default function JSONhandling({  
