@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Technology_React_Assignment\\",
+  "WorkspaceRootPath": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_technology_react_assignment\\src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_technology_react_assignment\\src\\components\\jsonhandling.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\jsonhandling.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\jsonhandling.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_technology_react_assignment\\src\\components\\playstopbuttons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\playstopbuttons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\playstopbuttons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "JSONhandling.js",
-              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
               "RelativeDocumentMoniker": "src\\components\\JSONhandling.js",
-              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
               "RelativeToolTip": "src\\components\\JSONhandling.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -40,11 +40,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "App.js",
-              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Technology_React_Assignment\\src\\App.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\App.js",
               "RelativeDocumentMoniker": "src\\App.js",
-              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Technology_React_Assignment\\src\\App.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\App.js",
               "RelativeToolTip": "src\\App.js",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-11-03T00:25:02.247Z",
               "EditorCaption": ""
@@ -53,9 +53,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "PlayStopButtons.js",
-              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Technology_React_Assignment\\src\\components\\PlayStopButtons.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\PlayStopButtons.js",
               "RelativeDocumentMoniker": "src\\components\\PlayStopButtons.js",
-              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Technology_React_Assignment\\src\\components\\PlayStopButtons.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\PlayStopButtons.js",
               "RelativeToolTip": "src\\components\\PlayStopButtons.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
