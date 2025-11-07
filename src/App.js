@@ -26,8 +26,9 @@ export default function StrudelDemo() {
 
     const hasRun = useRef(false);
 
-    const [musicText, setMusicText] = useState(stranger_tune)
-    const [musicPattern, setMusicPattern] = useState(true)
+    const [musicText, setMusicText] = useState(stranger_tune);
+    const [musicPattern, setMusicPattern] = useState(true);
+    const [musicPlaying, setMusicPlaying] = useState(false);
 
     // Controls for Tempo
     const [bpm, setBpm] = useState(140);
@@ -51,10 +52,12 @@ export default function StrudelDemo() {
     }
 
     const handlePlay = () => {
+        setMusicPlaying(true);
         globalEditor.evaluate()
     }
 
     const handleStop = () => {
+        setMusicPlaying(false);
         globalEditor.stop()
     }
 
@@ -106,6 +109,15 @@ useEffect(() => {
     }
     globalEditor.setCode(musicText);
 }, [musicText]);
+
+    useEffect(() => {
+        if (!globalEditor) return;
+        const processedMusicControls = preprocessMusicText(musicText);
+        globalEditor.setCode(processedMusicControls);
+        if (musicPlaying) {
+            globalEditor.evaluate();
+        }
+    }, [sliderVolume, bpm, conversion, beatCycle, musicPattern, musicText]);
 
 
     return (
