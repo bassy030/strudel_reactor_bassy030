@@ -1,8 +1,10 @@
 ﻿import React from 'react';
 // Dowload JSON file function
-// I have taken reference for this part from the following site: https://medium.com/@gb.usmanumar/how-to-export-data-to-csv-json-in-react-js-ea45d940652a
+// I have taken reference for download json part from the following site: https://medium.com/@gb.usmanumar/how-to-export-data-to-csv-json-in-react-js-ea45d940652a
+// I have taken reference for  file upload in react from the following sites: https://stackoverflow.com/questions/61707105/react-app-upload-and-read-json-file-into-variable-without-a-server
 export default function JSONhandling({  
-    sliderVolume, musicPattern, bpm, conversion, beatCycle
+    sliderVolume, musicPattern, bpm, conversion, beatCycle,
+     setSliderVolume, setMusicPattern, setBpm, setConversion, setBeatCycle
 }) {
     const downloadJSONFile = () => {
         const dataToDowload = {
@@ -20,6 +22,33 @@ export default function JSONhandling({
         jsonLink.click();
     };  
 
+    const uploadJSONFile = (event) => {
+        const fileJson = event.target.files[0];
+        event.target.value = '';
+        if (!fileJson) return;
+        const fileJsonReader = new FileReader();
+
+        fileJsonReader.onload = (e) => {
+            try {
+                const resultJson = e.target.result;
+                const JsonParase = JSON.parse(resultJson);
+
+                setSliderVolume(JsonParase.volume ?? sliderVolume);
+                setMusicPattern(JsonParase.p1Radio ?? musicPattern);
+                setBpm(JsonParase.Bpm ?? bpm);
+                setConversion(JsonParase.Conversion ?? conversion);
+                setBeatCycle(JsonParase.BeatCycle ?? beatCycle);
+
+                alert("JSON file uploaded successfully!!!!");
+            }
+            catch {
+                alert("JSON File Invalid!!");
+            }
+        };
+
+        fileJsonReader.readAsText(fileJson);
+    }
+
     return (
         <div className="card shadow mt-3">
             <div className="card-header">
@@ -28,7 +57,7 @@ export default function JSONhandling({
             <div className="card-body d-grid gap-2">
                 <button onClick={downloadJSONFile} className="btn btn-outline-success">Save JSON</button>
                 <label htmlFor="uploadJSONFile" className="btn btn-outline-info">Upload JSON</label>
-                <input type="file" id="uploadJSONFile" accept=".json" style={{ display: "none" }}/>
+                <input type="file" id="uploadJSONFile" accept=".json" onChange={uploadJSONFile} style={{ display: "none" }} />
             </div>
         </div>
     );

@@ -157,7 +157,8 @@ useEffect(() => {
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
                             sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
                     </div>
-                    <JSONhandling sliderVolume={sliderVolume} musicPattern={musicPattern} bpm={bpm} conversion={conversion} beatCycle={beatCycle} />
+                    <JSONhandling sliderVolume={sliderVolume} musicPattern={musicPattern} bpm={bpm} conversion={conversion} beatCycle={beatCycle}
+                        setSliderVolume={setSliderVolume} setMusicPattern={setMusicPattern} setBpm={setBpm} setConversion={setConversion} setBeatCycle={setBeatCycle} />
                     <D3Graph />
                 </div>
         </div>
