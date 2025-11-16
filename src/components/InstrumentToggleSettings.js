@@ -1,22 +1,15 @@
+﻿// I have taken some help from AI in regards to button design and Css styling, I am attaching the link for the conversation : https://claude.ai/share/20ded5f3-7246-4621-a1de-cc7f45c9eb16
 function InstrumentToggleSettings({ musicPattern, setMusicPattern, sliderVolume, setSliderVolume }) {
     return (
-        <div className="card-body">
-            <div className="form-check">
-                <input className="form-check-input" type="radio" name="musicPattern" id="musicPattern_ON" checked={musicPattern} onChange={() => setMusicPattern(true)} />
-                <label className="form-check-label" htmlFor="musicPattern_ON">
-                    p1: ON
-                </label>
+        <div className="card-body bg-dark text-white">
+            <div className="btn-group w-100 mb-3">
+                <button type="button" className={`btn ${musicPattern ? 'btn-success' : 'btn-outline-success'}`} onClick={() => setMusicPattern(true)}>p1: ON </button>
+                <button type="button" className={`btn ${!musicPattern ? 'btn-danger' : 'btn-outline-danger'}`} onClick={() => setMusicPattern(false)}>p1: HUSH </button>
             </div>
-            <div className="form-check">
-                <input className="form-check-input" type="radio" name="musicPattern" id="musicPattern_HUSH" checked={!musicPattern} onChange={() => setMusicPattern(false)} />
-                <label className="form-check-label" htmlFor="musicPattern_HUSH">
-                    p1: HUSH
-                </label>
-            </div>
-
+            <hr/>
             <div className="mt-3">
-                <label htmlFor="volumeSlider" className="form-label">
-                    <i class="bi bi-volume-up"></i> Volume: {sliderVolume}%
+                <label htmlFor="volumeSlider" className="form-label h4">
+                    <i className="bi bi-volume-up"></i> Volume: {sliderVolume}%
                 </label>
                 <input type="range" className="form-range" id="volumeSlider"
                     min="0" max="100" step="1" value={sliderVolume} onChange={(e) => setSliderVolume(parseInt(e.target.value))} />
@@ -26,3 +19,4 @@ function InstrumentToggleSettings({ musicPattern, setMusicPattern, sliderVolume,
 }
 
 export default InstrumentToggleSettings
+

@@ -121,10 +121,10 @@ useEffect(() => {
 
 
     return (
-        <div className="container-fluid" style={{ minHeight: '100vh', backgroundColor: '#1a1a2e', color: '#eee' }}>
+        <div className="container-fluid" style={{ minHeight: '100vh', backgroundColor: '#2D3436', color: '#eee' }}>
             <div className="row mb-4">
                 <div className="col-12">
-                    <div className="text-center">
+                    <div className="text-center" style={{ backgroundColor: '#5F3DC4', padding: '20px' }}>
                         <h1 className="display-4">
                             <i className="bi bi-soundwave"> </i>
                             Strudel Reactor Assignment
@@ -152,7 +152,7 @@ useEffect(() => {
                     <TempoControls bpm={bpm} setBpm={setBpm} conversion={conversion} setConversion={setConversion} beatCycle={beatCycle} setBeatCycle={setBeatCycle} />
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">
-                            <h5>DJ Controls</h5>
+                            <h5> <i className="bi bi-vinyl-fill"></i> DJ Controls</h5>
                         </div>
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
                             sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
