@@ -35,7 +35,7 @@ export default function D3Graph() {
     return (
         <div className="card shadow mt-3">
             <div className="card-header">
-                <h5>Live Music Visualization</h5>
+                <h3>Live Music Visualization</h3>
             </div>
             <div className="card-body">
                 <svg width="100%" height="400px" className="border border-primary"></svg>

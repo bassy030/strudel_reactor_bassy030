@@ -2,7 +2,7 @@
     return (
         <div className="card shadow mb-3">
             <div className="card-header bg-primary text-white">
-                <h5 className="mb-0"> <i className="bi bi-play-circle me-2"></i> Playback Controls</h5>
+                <h3 className="mb-0"> <i className="bi bi-play-circle me-2"></i> Playback Controls</h3>
             </div>
             <div className="card-body">
                 <div className="row g-2">

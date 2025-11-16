@@ -2,7 +2,7 @@ function TempControls({ bpm, setBpm, conversion, setConversion, beatCycle, setBe
     return (
         <div className="card shadow mt-3">
             <div className="card-header bg-info">
-                <h5><i className="bi bi-speedometer2 me-2"></i> Tempo Controls</h5>
+                <h3><i className="bi bi-speedometer2 me-2"></i> Tempo Controls</h3>
             </div>
             <div className="card-body">
                 <div className="mb-3">

@@ -52,7 +52,7 @@ export default function JSONhandling({
     return (
         <div className="card shadow mt-3">
             <div className="card-header">
-                <i className="bi bi-file-earmark-arrow-down"></i> JSON Handling
+                <h3><i className="bi bi-file-earmark-arrow-down"></i> JSON Handling</h3>
             </div>
             <div className="card-body d-grid gap-2">
                 <button onClick={downloadJSONFile} className="btn btn-outline-success">Save JSON</button>

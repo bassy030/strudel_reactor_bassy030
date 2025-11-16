@@ -130,16 +130,18 @@ useEffect(() => {
                             Strudel Reactor Assignment
                             <i className="bi bi-soundwave"> </i>
                         </h1>
-                        <p className="text-50">Live Music Coding Preprocessor</p>
+                        <h3>Live Music Coding Preprocessor</h3>
                     </div>
                 </div>
             </div>
             <div className="row">
-            <div className="col-lg-8">
-                <PreprocessorTextarea defaultValue={musicText} onChange={(e) => setMusicText(e.target.value)} />
+                <div className="col-lg-8">
+                    <div className="mb-4">
+                        <PreprocessorTextarea defaultValue={musicText} onChange={(e) => setMusicText(e.target.value)} />
+                    </div>
                     <div className="card shadow">
-                        <div className="card-header bg-success">
-                            <h5>Music Output</h5>
+                        <div className="card-header text-white" style={{ backgroundColor: '#6C5CE7' }}>
+                            <h3><i className="bi bi-cassette-fill"></i> Music Output</h3>
                         </div>
                         <div className="card-body">
                             <div id="editor" />
@@ -152,7 +154,7 @@ useEffect(() => {
                     <TempoControls bpm={bpm} setBpm={setBpm} conversion={conversion} setConversion={setConversion} beatCycle={beatCycle} setBeatCycle={setBeatCycle} />
                     <div className="card shadow mt-3">
                         <div className="card-header bg-dark text-white">
-                            <h5> <i className="bi bi-vinyl-fill"></i> DJ Controls</h5>
+                            <h3> <i className="bi bi-vinyl-fill"></i> DJ Controls</h3>
                         </div>
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
                             sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
