@@ -12,7 +12,7 @@ function InstrumentToggleSettings({ musicPattern, setMusicPattern, sliderVolume,
                     <i className="bi bi-volume-up"></i> Volume: {sliderVolume}%
                 </label>
                 <input type="range" className="form-range" id="volumeSlider"
-                    min="0" max="100" step="1" value={sliderVolume} onChange={(e) => setSliderVolume(parseInt(e.target.value))} />
+                    min="0" max="100" step="10" value={sliderVolume} onChange={(e) => setSliderVolume(parseInt(e.target.value))} />
             </div>
         </div>
     )

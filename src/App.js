@@ -1,6 +1,5 @@
 import './App.css';
 import { useEffect, useRef, useState } from "react";
-import { useHotkeys } from 'react-hotkeys-hook'
 import { StrudelMirror, slider } from '@strudel/codemirror';
 import { evalScope, set } from '@strudel/core';
 import { drawPianoroll } from '@strudel/draw';
@@ -16,6 +15,7 @@ import InstrumentToggleSettings from './components/InstrumentToggleSettings';
 import TempoControls from './components/TempoControls';
 import D3Graph from './components/D3Graph';
 import JSONhandling from './components/JSONhandling';
+import ShortCutKeys from './components/ShortCutKeys';
 import { type } from '@testing-library/user-event/dist/type'
 
 let  globalEditor = null;
@@ -75,16 +75,7 @@ export default function StrudelDemo() {
         globalEditor.evaluate();
     }
 
-    // Shortcuts keys for play and stop music.
-    useHotkeys('ctrl+p', (event) => {
-        event.preventDefault();
-        handleProcAndPlay();
-    });
-
-    useHotkeys('ctrl+s', (event) => {
-        event.preventDefault(event);
-        handleStop();
-    })
+ 
 
 useEffect(() => {
 
@@ -171,6 +162,7 @@ useEffect(() => {
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
                             sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
                     </div>
+                    < ShortCutKeys handleStop={handleStop} handleProcAndPlay={handleProcAndPlay} handleProc={handleProcess} />
                     <JSONhandling sliderVolume={sliderVolume} musicPattern={musicPattern} bpm={bpm} conversion={conversion} beatCycle={beatCycle}
                         setSliderVolume={setSliderVolume} setMusicPattern={setMusicPattern} setBpm={setBpm} setConversion={setConversion} setBeatCycle={setBeatCycle} />
                     <D3Graph />
