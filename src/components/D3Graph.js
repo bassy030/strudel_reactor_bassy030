@@ -81,7 +81,7 @@ export default function D3Graph() {
             .attr('stroke', 'url(#line-gradient)')
             .attr('stroke-width', 1.5)
             .attr('d', d3.line()
-                .x((d, i) => i * barWidth)
+                .x((_, i) => i * barWidth)
                 .y((d) => yScale(d))
             )
 
