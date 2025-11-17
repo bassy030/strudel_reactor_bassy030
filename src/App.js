@@ -1,5 +1,6 @@
 import './App.css';
 import { useEffect, useRef, useState } from "react";
+import { useHotkeys } from 'react-hotkeys-hook'
 import { StrudelMirror, slider } from '@strudel/codemirror';
 import { evalScope, set } from '@strudel/core';
 import { drawPianoroll } from '@strudel/draw';
@@ -73,6 +74,17 @@ export default function StrudelDemo() {
         globalEditor.setCode(processedMusicCode);
         globalEditor.evaluate();
     }
+
+    // Shortcuts keys for play and stop music.
+    useHotkeys('ctrl+p', (event) => {
+        event.preventDefault();
+        handleProcAndPlay();
+    });
+
+    useHotkeys('ctrl+s', (event) => {
+        event.preventDefault(event);
+        handleStop();
+    })
 
 useEffect(() => {
 
@@ -153,7 +165,7 @@ useEffect(() => {
                     <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} />
                     <TempoControls bpm={bpm} setBpm={setBpm} conversion={conversion} setConversion={setConversion} beatCycle={beatCycle} setBeatCycle={setBeatCycle} />
                     <div className="card shadow mt-3">
-                        <div className="card-header bg-dark text-white">
+                        <div className="card-header bg-light text-dark">
                             <h3> <i className="bi bi-vinyl-fill"></i> DJ Controls</h3>
                         </div>
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
