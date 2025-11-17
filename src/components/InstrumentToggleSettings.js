@@ -3,8 +3,8 @@ function InstrumentToggleSettings({ musicPattern, setMusicPattern, sliderVolume,
     return (
         <div className="card-body bg-dark text-white">
             <div className="btn-group w-100 mb-3">
-                <button type="button" className={`btn ${musicPattern ? 'btn-success' : 'btn-outline-success'}`} onClick={() => setMusicPattern(true)}>p1: ON </button>
-                <button type="button" className={`btn ${!musicPattern ? 'btn-danger' : 'btn-outline-danger'}`} onClick={() => setMusicPattern(false)}>p1: HUSH </button>
+                <button type="button" style={{ fontWeight: 'bold', fontSize: '20px' }} className={`btn ${musicPattern ? 'btn-success' : 'btn-outline-success'}`} onClick={() => setMusicPattern(true)}>p1: ON </button>
+                <button type="button" style={{ fontWeight: 'bold', fontSize: '20px' }} className={`btn ${!musicPattern ? 'btn-danger' : 'btn-outline-danger'}`} onClick={() => setMusicPattern(false)}>p1: HUSH </button>
             </div>
             <hr/>
             <div className="mt-3">

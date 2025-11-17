@@ -8,16 +8,16 @@
                 <div className="card-body">
                     <div className="row g-2">
                         <div className="col-6">
-                            <button id="play" onClick={onPlay} className="btn btn-success w-100"><i className="bi bi-play"></i> Play</button>
+                            <button style={{ fontWeight: 'bold', fontSize: '20px' }}  id="play" onClick={onPlay} className="btn btn-success w-100"><i className="bi bi-play"></i> Play</button>
                         </div>
                         <div className="col-6">
-                            <button id="stop" onClick={onStop} className="btn btn-danger w-100"> <i className="bi bi-stop-fill"></i> Stop</button>
+                            <button style={{ fontWeight: 'bold', fontSize: '20px' }} id="stop" onClick={onStop} className="btn btn-danger w-100"> <i className="bi bi-stop-fill"></i> Stop</button>
                         </div>
                         <div className="col-6">
-                            <button id="process" onClick={onProcess} className="btn btn-info w-100"> <i className="bi-arrow-repeat"></i> Process</button>
+                            <button style={{ fontWeight: 'bold', fontSize: '20px' }} id="process" onClick={onProcess} className="btn btn-info w-100"> <i className="bi-arrow-repeat"></i> Process</button>
                         </div>
                         <div className="col-6">
-                            <button id="procandplay" onClick={onProcAndPlay} className="btn btn-warning w-100"> <i className="bi-skip-forward-fill"></i> Proc & Play</button>
+                            <button style={{ fontWeight: 'bold', fontSize: '20px' }} id="procandplay" onClick={onProcAndPlay} className="btn btn-warning w-100"> <i className="bi-skip-forward-fill"></i> Proc & Play</button>
                         </div>
                     </div>
                 </div>

@@ -68,12 +68,12 @@ export default function JSONhandling({
 
     return (
         <div className="card shadow mt-3">
-            <div className="card-header">
+            <div className="card-header" style={{ background:'#00B894' }}>
                 <h3><i className="bi bi-file-earmark-arrow-down"></i> JSON Handling</h3>
             </div>
-            <div className="card-body d-grid gap-2">
-                <button onClick={downloadJSONFile} className="btn btn-outline-success">Save JSON</button>
-                <label htmlFor="uploadJSONFile" className="btn btn-outline-info">Upload JSON</label>
+            <div className="card-body d-grid gap-2" style={{ background: '#B2BEC3' }}>
+                <button onClick={downloadJSONFile} className="btn btn-success" style={{ fontWeight: 'bold', fontSize: '20px' }}>Save JSON</button>
+                <label htmlFor="uploadJSONFile" className="btn btn-info" style={{ fontWeight: 'bold', fontSize:'20px' }}>Upload JSON</label>
                 <input type="file" ref={fileRefShortCut} id="uploadJSONFile" accept=".json" onChange={uploadJSONFile} style={{ display: "none" }} />
             </div>
         </div>
