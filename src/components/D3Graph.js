@@ -89,10 +89,10 @@ export default function D3Graph() {
 
     return (
         <div className="card shadow mt-3">
-            <div className="card-header">
+            <div className="card-header" style={{ backgroundColor: '#6C5CE7', color: 'white' }}>
                 <h3>Live Music Visualization</h3>
             </div>
-            <div className="card-body">
+            <div className="card-body" style={{ backgroundColor: '#2D3436' }}>
                 <svg width="100%" height="400px" className="border border-primary"></svg>
             </div>
         </div>

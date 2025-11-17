@@ -22,6 +22,7 @@ export default function JSONhandling({
         jsonLink.href = jsonUrl;
         jsonLink.download = 'strudel-data.json';
         jsonLink.click();
+        alert('Successfully downloaded strudel-data.json!!!!');
     };  
 
     const uploadJSONFile = (event) => {
@@ -69,7 +70,7 @@ export default function JSONhandling({
     return (
         <div className="card shadow mt-3">
             <div className="card-header" style={{ background:'#00B894' }}>
-                <h3><i className="bi bi-file-earmark-arrow-down"></i> JSON Handling</h3>
+                <h3><i className="bi bi-file-earmark-arrow-down-fill"></i> JSON Handling</h3>
             </div>
             <div className="card-body d-grid gap-2" style={{ background: '#B2BEC3' }}>
                 <button onClick={downloadJSONFile} className="btn btn-success" style={{ fontWeight: 'bold', fontSize: '20px' }}>Save JSON</button>

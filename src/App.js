@@ -165,7 +165,7 @@ useEffect(() => {
                     </div>
                     <JSONhandling sliderVolume={sliderVolume} musicPattern={musicPattern} bpm={bpm} conversion={conversion} beatCycle={beatCycle}
                         setSliderVolume={setSliderVolume} setMusicPattern={setMusicPattern} setBpm={setBpm} setConversion={setConversion} setBeatCycle={setBeatCycle} />
-                    <D3Graph/>
+                    <D3Graph />
                 </div>
         </div>
         <canvas id="roll"></canvas>
