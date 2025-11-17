@@ -17,7 +17,7 @@ export default function ShortCutKeys({ handleStop, handleProcAndPlay, handleProc
         handleProc();
     });
     return (
-        <div className="card shadow mt-3">
+        <div className="card shadow">
             <div className="card-header" style={{ backgroundColor: '#A29BFE' }}>
                 <h3><i className="bi bi-keyboard-fill"></i> Keyboard Shortcuts</h3>
             </div>
@@ -27,6 +27,10 @@ export default function ShortCutKeys({ handleStop, handleProcAndPlay, handleProc
                 <p className="card-text" style={{ fontWeight: 'bold', margin: '5px 0', fontSize: '25px' }}>Ctrl + S = Stop Music</p>
                 <hr/>
                 <p className="card-text" style={{ fontWeight: 'bold', margin: '5px 0', fontSize: '25px' }}>Ctrl + F = Process Music</p>
+                <hr />
+                <p className="card-text" style={{ fontWeight: 'bold', margin: '5px 0', fontSize: '25px' }}>Ctrl + Shift + S = Save Music Controls</p>
+                <hr />
+                <p className="card-text" style={{ fontWeight: 'bold', margin: '5px 0', fontSize: '25px' }}>Ctrl + Shift + U = Upload Music Controls</p>
             </div>
         </div>
     )

@@ -153,6 +153,7 @@ useEffect(() => {
                     </div>
                 </div>
                 <div className="col-lg-4">
+                    < ShortCutKeys handleStop={handleStop} handleProcAndPlay={handleProcAndPlay} handleProc={handleProcess} />
                     <PlayStopButtons onPlay={handlePlay} onStop={handleStop} onProcess={handleProcess} onProcAndPlay={handleProcAndPlay} />
                     <TempoControls bpm={bpm} setBpm={setBpm} conversion={conversion} setConversion={setConversion} beatCycle={beatCycle} setBeatCycle={setBeatCycle} />
                     <div className="card shadow mt-3">
@@ -162,7 +163,6 @@ useEffect(() => {
                         <InstrumentToggleSettings musicPattern={musicPattern} setMusicPattern={setMusicPattern}
                             sliderVolume={sliderVolume} setSliderVolume={setSliderVolume} />
                     </div>
-                    < ShortCutKeys handleStop={handleStop} handleProcAndPlay={handleProcAndPlay} handleProc={handleProcess} />
                     <JSONhandling sliderVolume={sliderVolume} musicPattern={musicPattern} bpm={bpm} conversion={conversion} beatCycle={beatCycle}
                         setSliderVolume={setSliderVolume} setMusicPattern={setMusicPattern} setBpm={setBpm} setConversion={setConversion} setBeatCycle={setBeatCycle} />
                     <D3Graph />
