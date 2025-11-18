@@ -18,13 +18,14 @@ Additionally, this also manages the handler for playing, stopping and processing
 # handleProcAndPlay(): For processing and playing the music text.
 
 Lastly, the App.js also manages all the different files that are used in this project and used for rendering the components. The main components used in this project are:
-# D3Graph.js
-# InstrumentToggelSettings.js
-# JSONhandling.js
-# PlayStopButtons.js
-# ShortCutKeys.js
-# PreprocessorTextarea.js
-# TempoControls.js
+
+D3Graph.js
+InstrumentToggelSettings.js
+JSONhandling.js
+PlayStopButtons.js
+ShortCutKeys.js
+PreprocessorTextarea.js
+TempoControls.js
 
 
 # D3Graph.js
