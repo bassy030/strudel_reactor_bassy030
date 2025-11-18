@@ -1,3 +1,6 @@
+// This componment provides temmp controls and gets bpm, conversion factor and beat cycle as props.
+// Whenver the user changes any value the setter functions are triggred to update the state in the App.js. For this onChange event handlers are used.
+// Additonally this component is used for styling the tempo controls card.
 function TempControls({ bpm, setBpm, conversion, setConversion, beatCycle, setBeatCycle }) {
     return (
         <div className="card shadow mt-3" style={{ backgroundColor: '#87CEEB' }} >
