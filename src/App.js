@@ -25,49 +25,53 @@ const handleD3Data = (event) => {
 };
 export default function StrudelDemo() {
 
-    const hasRun = useRef(false);
+    const hasRun = useRef(false); 
 
-    const [musicText, setMusicText] = useState(stranger_tune);
-    const [musicPattern, setMusicPattern] = useState(true);
-    const [musicPlaying, setMusicPlaying] = useState(false);
+    const [musicText, setMusicText] = useState(stranger_tune); // UseState to hold the music code.
+    const [musicPattern, setMusicPattern] = useState(true); // UseState to hold the music pattern (on/hush).
+    const [musicPlaying, setMusicPlaying] = useState(false); // UseState to hold if music is playing.
+    const [bpm, setBpm] = useState(140); // UseState to hold BPM.
+    const [conversion, setConversion] = useState(60); // UseState to hold conversion rate.
+    const [beatCycle, setBeatCycle] = useState(4); // UseState to hold beat cycle.
+    const [sliderVolume, setSliderVolume] = useState(50); // UseState to hold volume slider.
 
-    // Controls for Tempo
-    const [bpm, setBpm] = useState(140);
-    const [conversion, setConversion] = useState(60);
-    const [beatCycle, setBeatCycle] = useState(4);
-
-    // For music slider
-    const [sliderVolume, setSliderVolume] = useState(50);
-
+    // The below function preprocesses the music text to replace all the placeholders with actual values.
+    // Since I have used differetn placeholders in the music code, whenever a new value is set, this function replaces it accordingly.
     function preprocessMusicText(textMusic) {
-        let replaceHushOrOn;
-        let replaceVolume = sliderVolume / 100;
+        let replaceHushOrOn; // Variable to hold whether music is on or hushed.
+        let replaceVolume = sliderVolume / 100; // Variable to hold the volume.
+        // Replacing placeholders with actual values.
         if (musicPattern) {
-            replaceHushOrOn = "";
+            replaceHushOrOn = ""; // Music is on.
         }
         else {
-            replaceHushOrOn = "_";
+            replaceHushOrOn = "_"; // Music is hushed.
         }
+        // Returing the processed music text with all placeholders replaced.
         return textMusic.replaceAll("<p1_Radio>", replaceHushOrOn).replaceAll("<Volume>", replaceVolume).
             replaceAll("<BPM>", bpm).replaceAll("<CONVERSION>", conversion).replaceAll("<BEATS>", beatCycle);
     }
 
+    // Handler for play button.
     const handlePlay = () => {
         setMusicPlaying(true);
         globalEditor.evaluate()
     }
 
+    // Handler for stop button.
     const handleStop = () => {
         setMusicPlaying(false);
         globalEditor.stop()
     }
 
+    // Handler for process button.
     const handleProcess = () => {
         if (!globalEditor) return;
         const processedMusicCode = preprocessMusicText(musicText);
         globalEditor.setCode(processedMusicCode);
     }
 
+    // Handler for process and play button.
     const handleProcAndPlay = () => {
         if (!globalEditor) return;
         const processedMusicCode = preprocessMusicText(musicText);
@@ -76,6 +80,8 @@ export default function StrudelDemo() {
     }
 
  
+    // Provdied to use in the starter code. I have only added setCode(musicText) to set the initial code and also whenever musicText changes,
+    // Automatically update the code in the editor.
 
 useEffect(() => {
 
@@ -113,14 +119,15 @@ useEffect(() => {
     globalEditor.setCode(musicText);
 }, [musicText]);
 
+    // This UseEffect updates the code in the editor whenever any of the music paramters changes wihtout needing to click on process or process and play button.
     useEffect(() => {
         if (!globalEditor) return;
-        const processedMusicControls = preprocessMusicText(musicText);
-        globalEditor.setCode(processedMusicControls);
+        const processedMusicControls = preprocessMusicText(musicText); // Preprocess the music text with current control values.
+        globalEditor.setCode(processedMusicControls); // Update the code in the editor.
         if (musicPlaying) {
-            globalEditor.evaluate();
+            globalEditor.evaluate(); //This automically plays the music with new parameters.
         }
-    }, [sliderVolume, bpm, conversion, beatCycle, musicPattern, musicText]);
+    }, [sliderVolume, bpm, conversion, beatCycle, musicPattern, musicText]); // Dependencies to watch for changes.
 
 
     return (
