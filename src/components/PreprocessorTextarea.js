@@ -1,3 +1,6 @@
+// This componnent reders the textarea for the preprocessor code editor. It is used in App.js.
+// The component takes in 2 props, defaultValue and onChange.
+// defaultValue is used to set the initial value of the textarea and onChange is a callback function used whenever the content of the textarea changes.
 function PreprocessorTextarea({ defaultValue, onChange }) {
     return (
         <div className="card shadow">
