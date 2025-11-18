@@ -1,12 +1,173 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\shortcutkeys.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\shortcutkeys.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\jsonhandling.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\jsonhandling.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\tempocontrols.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\tempocontrols.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\preprocessortextarea.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\preprocessortextarea.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\playstopbuttons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\playstopbuttons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\instrumenttogglesettings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\instrumenttogglesettings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\d3graph.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\d3graph.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-18T07:39:15.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TempoControls.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\TempoControls.js",
+              "RelativeDocumentMoniker": "src\\components\\TempoControls.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\TempoControls.js",
+              "RelativeToolTip": "src\\components\\TempoControls.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T07:15:59.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShortCutKeys.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\ShortCutKeys.js",
+              "RelativeDocumentMoniker": "src\\components\\ShortCutKeys.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\ShortCutKeys.js",
+              "RelativeToolTip": "src\\components\\ShortCutKeys.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T07:15:48.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PreprocessorTextarea.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\PreprocessorTextarea.js",
+              "RelativeDocumentMoniker": "src\\components\\PreprocessorTextarea.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\PreprocessorTextarea.js",
+              "RelativeToolTip": "src\\components\\PreprocessorTextarea.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T07:15:37.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayStopButtons.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\PlayStopButtons.js",
+              "RelativeDocumentMoniker": "src\\components\\PlayStopButtons.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\PlayStopButtons.js",
+              "RelativeToolTip": "src\\components\\PlayStopButtons.js",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T07:15:27.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JSONhandling.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
+              "RelativeDocumentMoniker": "src\\components\\JSONhandling.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
+              "RelativeToolTip": "src\\components\\JSONhandling.js",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T07:15:11.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\App.js",
+              "RelativeDocumentMoniker": "src\\App.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\App.js",
+              "RelativeToolTip": "src\\App.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAE8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T05:34:42.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InstrumentToggleSettings.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\InstrumentToggleSettings.js",
+              "RelativeDocumentMoniker": "src\\components\\InstrumentToggleSettings.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\InstrumentToggleSettings.js",
+              "RelativeToolTip": "src\\components\\InstrumentToggleSettings.js",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T07:15:00.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "D3Graph.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\D3Graph.js",
+              "RelativeDocumentMoniker": "src\\components\\D3Graph.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\D3Graph.js",
+              "RelativeToolTip": "src\\components\\D3Graph.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-18T07:14:34.814Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

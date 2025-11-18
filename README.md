@@ -77,3 +77,6 @@ AI links:
 1. D3 Graph: https://claude.ai/share/07515c7a-257b-4fa2-94ff-bf8bb1682f43
 2.Instrument Toggle Setting help: https://claude.ai/share/20ded5f3-7246-4621-a1de-cc7f45c9eb16
 3. ShortCutKey json handling help: https://claude.ai/share/fac75412-fa0c-413a-b58d-c531551fdce6
+
+# Link to my Music Video
+https://youtu.be/NjijmIT-TXY
