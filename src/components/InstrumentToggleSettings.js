@@ -1,6 +1,4 @@
-﻿// I have taken some help from AI in regards to button design and Css styling, I am attaching the link for the conversation : https://claude.ai/share/20ded5f3-7246-4621-a1de-cc7f45c9eb16
-
-/**
+﻿/**
  * Component for toggling instrument settings (p1: ON/HUSH) and volume slider.
  * The component allows users to enable or disable the music paattern and also adjust the voumne.
  */

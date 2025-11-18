@@ -1,8 +1,5 @@
 ﻿import React, { useRef} from 'react';
 import { useHotkeys } from 'react-hotkeys-hook'
-// Dowload JSON file function
-// I have taken reference for download json part from the following site: https://medium.com/@gb.usmanumar/how-to-export-data-to-csv-json-in-react-js-ea45d940652a
-// I have taken reference for  file upload in react from the following sites: https://stackoverflow.com/questions/61707105/react-app-upload-and-read-json-file-into-variable-without-a-server
 
 // This componetn is responsible for handlinmg JSON file donwload and upload.
 // The component takes in sveral props from the APP.js file for download and upload functionality.
