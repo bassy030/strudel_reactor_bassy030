@@ -77,6 +77,7 @@ export default function StrudelDemo() {
         const processedMusicCode = preprocessMusicText(musicText);
         globalEditor.setCode(processedMusicCode);
         globalEditor.evaluate();
+        setMusicPlaying(true);
     }
 
  
