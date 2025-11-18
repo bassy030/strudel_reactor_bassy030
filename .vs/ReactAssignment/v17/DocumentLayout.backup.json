@@ -11,8 +11,8 @@
       "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\playstopbuttons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\playstopbuttons.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|c:\\users\\61470\\desktop\\nik uni\\webtechnology\\web_techology_react_assignment_main\\web_technology_react_assignment\\src\\components\\d3graph.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1C538C04-AF09-44AC-9272-6DDEAA808F25}|ReactAssignment.esproj|solutionrelative:src\\components\\d3graph.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JSONhandling.js",
-              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
-              "RelativeDocumentMoniker": "src\\components\\JSONhandling.js",
-              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
-              "RelativeToolTip": "src\\components\\JSONhandling.js",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-07T01:09:29.508Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -45,21 +32,37 @@
               "RelativeDocumentMoniker": "src\\App.js",
               "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\App.js",
               "RelativeToolTip": "src\\App.js",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJ8AAACUAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAmwJAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-03T00:25:02.247Z"
+              "WhenOpened": "2025-11-03T00:25:02.247Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JSONhandling.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
+              "RelativeDocumentMoniker": "src\\components\\JSONhandling.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\JSONhandling.js",
+              "RelativeToolTip": "src\\components\\JSONhandling.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-17T14:34:42.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PlayStopButtons.js",
-              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\PlayStopButtons.js",
-              "RelativeDocumentMoniker": "src\\components\\PlayStopButtons.js",
-              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\PlayStopButtons.js",
-              "RelativeToolTip": "src\\components\\PlayStopButtons.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Title": "D3Graph.js",
+              "DocumentMoniker": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\D3Graph.js",
+              "RelativeDocumentMoniker": "src\\components\\D3Graph.js",
+              "ToolTip": "C:\\Users\\61470\\Desktop\\Nik Uni\\WebTechnology\\Web_Techology_React_Assignment_Main\\Web_Technology_React_Assignment\\src\\components\\D3Graph.js",
+              "RelativeToolTip": "src\\components\\D3Graph.js",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwF4AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-05T04:03:39.725Z"
+              "WhenOpened": "2025-11-17T12:43:42.129Z",
+              "EditorCaption": ""
             }
           ]
         }
